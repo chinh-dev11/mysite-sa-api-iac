@@ -1,0 +1,52 @@
+{
+  "ModelName": "Mysite Collection Data Model",
+  "ModelMetadata": {
+    "Author": "Chinh",
+    "DateCreated": "Apr 22, 2020, 10:07 AM",
+    "DateLastModified": "Apr 22, 2020, 02:46 PM",
+    "Description": "This data model represents Amazon DynamoDB schema for mysite appliccation.",
+    "Version": "1.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "mysite-sa-dev",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "Section",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "DateCompleted",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "Type",
+          "AttributeType": "S"
+        }
+      ],
+      "GlobalSecondaryIndexes": [
+        {
+          "IndexName": "TypeIndex",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "Type",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "DateCompleted",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    }
+  ]
+}

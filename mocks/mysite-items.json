@@ -1,0 +1,314 @@
+{
+  "mysite-sa-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "Section": {
+            "S": "apps"
+          },
+          "DateCompleted": {
+            "S": "2019-03-25"
+          },
+          "Type": {
+            "S": "lab"
+          },
+          "Name": {
+            "S": "Recipe Book"
+          },
+          "Languages": {
+            "SS": [
+              "Angular 7",
+              "Google Web Services",
+              "Bootstrap 3"
+            ]
+          },
+          "Image": {
+            "M": {
+              "En": {
+                "S": "recipe-book-ng-640.png"
+              }
+            }
+          },
+          "Url": {
+            "M": {
+              "En": {
+                "S": "https://recipe-book-ng-183d5.firebaseapp.com/"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Section": {
+            "S": "apps"
+          },
+          "DateCompleted": {
+            "S": "2013-12-31"
+          },
+          "Type": {
+            "S": "work"
+          },
+          "Name": {
+            "S": "clubillico"
+          },
+          "Languages": {
+            "SS": [
+              "AngularJS (v1.6)",
+              "jQuery",
+              "Java",
+              "Oracle SQL"
+            ]
+          },
+          "Image": {
+            "M": {
+              "En": {
+                "S": "clubillico-en.jpg"
+              },
+              "Fr": {
+                "S": "clubillico-fr.jpg"
+              }
+            }
+          },
+          "Url": {
+            "M": {
+              "En": {
+                "S": "clubillico.videotron.com/home"
+              },
+              "Fr": {
+                "S": "clubillico.videotron.com/accueil"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Section": {
+            "S": "apps"
+          },
+          "DateCompleted": {
+            "S": "2011-12-31"
+          },
+          "Type": {
+            "S": "work"
+          },
+          "Name": {
+            "S": "illicoweb"
+          },
+          "Languages": {
+            "SS": [
+              "AngularJS (v1.6)",
+              "jQuery",
+              "Java",
+              "Oracle SQL"
+            ]
+          },
+          "Image": {
+            "M": {
+              "En": {
+                "S": "illicoweb-en.jpg"
+              },
+              "Fr": {
+                "S": "illicoweb-fr.jpg"
+              }
+            }
+          },
+          "Url": {
+            "M": {
+              "En": {
+                "S": "illicoweb.videotron.com/home"
+              },
+              "Fr": {
+                "S": "illicoweb.videotron.com/accueil"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Section": {
+            "S": "certs"
+          },
+          "DateCompleted": {
+            "S": "2020-04-10"
+          },
+          "Name": {
+            "S": "Front End Libraries"
+          },
+          "Languages": {
+            "SS": [
+              "React",
+              "Redux",
+              "Bootstrap",
+              "Sass",
+              "jQuery"
+            ]
+          },
+          "Image": {
+            "M": {
+              "En": {
+                "S": "fcc-front-end-libraries-certificate.png"
+              }
+            }
+          },
+          "Url": {
+            "M": {
+              "Cert": {
+                "S": "https://www.freecodecamp.org/certification/chinh-le/front-end-libraries"
+              },
+              "Source": {
+                "S": "https://www.freecodecamp.org/learn#front-end-libraries"
+              }
+            }
+          },
+          "Alt": {
+            "M": {
+              "En": {
+                "S": "Front End Libraries Certificate"
+              },
+              "Fr": {
+                "S": "Certificat de bibliothèques Front End"
+              }
+            }
+          },
+          "Label": {
+            "M": {
+              "En": {
+                "S": "Front End Libraries"
+              },
+              "Fr": {
+                "S": "Bibliothèques Front End"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Section": {
+            "S": "certs"
+          },
+          "DateCompleted": {
+            "S": "2020-03-24"
+          },
+          "Name": {
+            "S": "APIs and Microservices"
+          },
+          "Languages": {
+            "SS": [
+              "NodeJS",
+              "MongoDB",
+              "Mongoose",
+              "NPM"
+            ]
+          },
+          "Image": {
+            "M": {
+              "En": {
+                "S": "fcc-apis-microservices.png"
+              }
+            }
+          },
+          "Url": {
+            "M": {
+              "Cert": {
+                "S": "https://www.freecodecamp.org/certification/chinh-le/apis-and-microservices"
+              },
+              "Source": {
+                "S": "https://www.freecodecamp.org/learn/#apis-and-microservices"
+              }
+            }
+          },
+          "Alt": {
+            "M": {
+              "En": {
+                "S": "APIs and Microservices Certificate"
+              },
+              "Fr": {
+                "S": "Certificat API et Microservices"
+              }
+            }
+          },
+          "Label": {
+            "M": {
+              "En": {
+                "S": "APIs and Microservices"
+              },
+              "Fr": {
+                "S": "API et Microservices"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Section": {
+            "S": "certs"
+          },
+          "DateCompleted": {
+            "S": "2020-03-09"
+          },
+          "Name": {
+            "S": "AWS Serverless APIs & Apps"
+          },
+          "Languages": {
+            "SS": [
+              "Serverless",
+              "AWS"
+            ]
+          },
+          "Image": {
+            "M": {
+              "En": {
+                "S": "jUC-032d5abc-610a-44c1-bbb4-ef8fad3b6680.jpg"
+              }
+            }
+          },
+          "Url": {
+            "M": {
+              "Cert": {
+                "S": "https://www.udemy.com/certificate/UC-032d5abc-610a-44c1-bbb4-ef8fad3b6680/"
+              },
+              "Source": {
+                "S": "https://www.udemy.com/course/aws-serverless-a-complete-introduction/"
+              }
+            }
+          },
+          "Alt": {
+            "M": {
+              "En": {
+                "S": "AWS Serverless APIs & Apps certificate"
+              },
+              "Fr": {
+                "S": "Certificat d'API et d'applications AWS sans serveur"
+              }
+            }
+          },
+          "Label": {
+            "M": {
+              "En": {
+                "S": "AWS Serverless APIs & Apps"
+              },
+              "Fr": {
+                "S": "API et Applications AWS sans serveur"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
