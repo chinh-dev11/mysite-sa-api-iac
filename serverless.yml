@@ -54,13 +54,31 @@ provider:
         # - "/index/*"
 
 functions:
-  apps:
+  appsGet:
     handler: apps/get.main
     events:
       - http:
           path: apps
           method: get
-  certs:
+  appsCreate:
+    handler: apps/create.main
+    events:
+      - http:
+          path: apps/create
+          method: post
+  appsUpdate:
+    handler: apps/update.main
+    events:
+      - http:
+          path: apps/update
+          method: post
+  appsDelete:
+    handler: apps/delete.main
+    events:
+      - http:
+          path: apps/update
+          method: post
+  certsGet:
     handler: certs/get.main
     events:
       - http:

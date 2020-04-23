@@ -6,7 +6,7 @@ export const main = async (event, context) => {
     TableName: process.env.TABLE_NAME,
     KeyConditionExpression: '#PK = :pkValue',
     ExpressionAttributeNames: {'#PK': 'Section'},
-    ExpressionAttributeValues: {':pkValue': 'certs'},
+    ExpressionAttributeValues: {':pkValue': {'S': 'certs'}},
     ScanIndexForward: false // descending order
   };
 

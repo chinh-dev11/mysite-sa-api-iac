@@ -17,7 +17,8 @@ export const call = ({action, params}) => {
 		}
 	}); */
 
-	const docClient = new AWS.DynamoDB.DocumentClient();
+	// const docClient = new AWS.DynamoDB.DocumentClient();
+	const docClient = new AWS.DynamoDB();
 
 	return docClient[action](params).promise();
 };

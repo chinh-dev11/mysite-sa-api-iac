@@ -7,16 +7,16 @@ export const main = async (event, context) => {
 	const params = { // all apps
 		TableName: process.env.TABLE_NAME,
 		KeyConditionExpression: '#PK = :pkValue',
-		ExpressionAttributeNames: { '#PK': 'Section' },
-		ExpressionAttributeValues: { ':pkValue': 'apps'	},
+		ExpressionAttributeNames: {'#PK': 'Section'},
+		ExpressionAttributeValues: {':pkValue': {'S':'apps'}},
 		ScanIndexForward: false // descending order
 	};
 
 	if(event.queryStringParameters) {
 		params.IndexName = 'TypeIndex';
 		params.KeyConditionExpression = '#PK = :pkValue';
-		params.ExpressionAttributeNames = { '#PK': 'Type' };
-		params.ExpressionAttributeValues = { ':pkValue': event.queryStringParameters.type	}; // work or lab
+		params.ExpressionAttributeNames = {'#PK': 'Type'};
+		params.ExpressionAttributeValues = {':pkValue': {'S': event.queryStringParameters.type}}; // work or lab
 		params.ScanIndexForward = false; // descending order
 	}
 
