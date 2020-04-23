@@ -9,7 +9,7 @@
   },
   "DataModel": [
     {
-      "TableName": "mysite-sa-dev",
+      "TableName": "mysite_sa_dev",
       "KeyAttributes": {
         "PartitionKey": {
           "AttributeName": "Section",

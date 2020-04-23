@@ -12,9 +12,7 @@ plugins:
 
 custom:
   stage: ${opt:stage, self:provider.stage}
-  tableName: mysite-sa-${self:custom.stage}
-  # tableNameApps: mysite-sa-api-apps-${self:custom.stage}
-  # tableNameCerts: mysite-sa-api-apps-${self:custom.stage}
+  tableName: mysite_sa_${self:custom.stage}
 
 provider:
   name: aws
@@ -71,13 +69,13 @@ functions:
     events:
       - http:
           path: apps/update
-          method: post
+          method: put
   appsDelete:
     handler: apps/delete.main
     events:
       - http:
-          path: apps/update
-          method: post
+          path: apps/delete
+          method: delete
   certsGet:
     handler: certs/get.main
     events:
@@ -88,5 +86,6 @@ functions:
 resources:
   - ${file(resources/api-gateway-errors.yml)}
   - ${file(resources/dynamodb-table.yml)}
-  # - ${file(resources/dynamodb-table-apps.yml)}
-  # - ${file(resources/dynamodb-table-certs.yml)}
+  - ${file(resources/cognito-user-pool.yml)}
+  - ${file(resources/cognito-identity-pool.yml)}
+  # - ${file(resources/s3-bucket.yml)}

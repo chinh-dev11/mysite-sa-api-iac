@@ -1,5 +1,5 @@
 {
-  "mysite-sa-dev": [
+  "mysite_sa_dev": [
     {
       "PutRequest": {
         "Item": {
